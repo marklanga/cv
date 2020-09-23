@@ -27,6 +27,7 @@
             </div>
         </header><br/>
 
+        <!--Custom Bread Crumb-->
         <div class="sm:flex-wrap md:flex-wrap p-4">
             <section class="inline-block max-w-5xl mx-auto border-b-2 p-2 m-2">
                 <h3 class="text-white font-black m-3">where to<br/>
@@ -45,13 +46,15 @@
 
                 <div class=" inline-block sm:grid grid-cols-2 gap-4">
                     <div class="w-full border-b-2 p-2 mb-6">
-                        <h1 class="text-2xl text-teal-200 mb-3">email Me</h1>
-                        <input class="placeholder-gray-500 border rounded w-full p-1 mb-3" placeholder="Mark Langa">
-                        <input class="placeholder-gray-500 border rounded w-full p-1 mb-3" placeholder="marklanga@icloud.com">
-                        <input class="placeholder-gray-500 border rounded w-full p-1 mb-3" placeholder="Your message...">
-                        <button class="text-white border-2 rounded hover:text-gray-600 hover:bg-gray-100 p-1 px-6">
-                            Send
-                        </button>
+                        <form action="PostEmail.php" method="post">
+                            <h1 class="text-2xl text-teal-200 mb-3">email Me</h1>
+                            <input name="contact_Name" class="placeholder-gray-500 border rounded w-full p-1 mb-3" placeholder="Mark Langa">
+                            <input name="contact_Email" class="placeholder-gray-500 border rounded w-full p-1 mb-3" placeholder="marklanga@icloud.com">
+                            <input name="contact_Message" class="placeholder-gray-500 border rounded w-full p-1 mb-3" placeholder="Your message...">
+                            <input type="submit" class="text-gray-900 border-2 rounded hover:text-gray-600 hover:bg-gray-100 p-1 px-6">
+                                
+                            </input>
+                        </form>
                     </div>
                     <div class="inline-block grid grid-cols-2 p-2">
                         <h1 class="text-2xl text-teal-200 mb-2">social Media</h1>
