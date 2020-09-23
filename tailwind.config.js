@@ -5,6 +5,11 @@ module.exports = {
   },
   purge: [],
   theme: {
+    extend: {
+      backgroundImage: theme => ({
+        'car' : "url('car.jpg')",
+      })
+    },
     container: {
       center: true,
       padding: '2rem'
