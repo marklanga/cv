@@ -3535,6 +3535,10 @@ video {
   background-image: linear-gradient(to top left, var(--gradient-color-stops));
 }
 
+.bg-car {
+  background-image: url('car.jpg');
+}
+
 .from-transparent {
   --gradient-from-color: transparent;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -21238,6 +21242,43 @@ video {
           animation: bounce 1s infinite;
 }
 
+.page-footer {
+  --bg-opacity: 1;
+  background-color: #f7fafc;
+  background-color: rgba(247, 250, 252, var(--bg-opacity));
+  padding: 1.25rem;
+  margin-top: 0.75rem;
+}
+
+.extra {
+  --bg-opacity: 1;
+  background-color: #2d3748;
+  background-color: rgba(45, 55, 72, var(--bg-opacity));
+}
+
+.download-cv {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  float: right;
+  flex-shrink: 0;
+}
+
+.skills-progress {
+  border-width: 2px;
+  padding: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.skill-section {
+  display: block;
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -24186,6 +24227,10 @@ video {
 
   .sm\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
+  }
+
+  .sm\:bg-car {
+    background-image: url('car.jpg');
   }
 
   .sm\:from-transparent {
@@ -44776,6 +44821,10 @@ video {
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
   }
 
+  .md\:bg-car {
+    background-image: url('car.jpg');
+  }
+
   .md\:from-transparent {
     --gradient-from-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -65362,6 +65411,10 @@ video {
 
   .lg\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
+  }
+
+  .lg\:bg-car {
+    background-image: url('car.jpg');
   }
 
   .lg\:from-transparent {
@@ -85952,6 +86005,10 @@ video {
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
   }
 
+  .xl\:bg-car {
+    background-image: url('car.jpg');
+  }
+
   .xl\:from-transparent {
     --gradient-from-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -103589,4 +103646,3 @@ video {
             animation: bounce 1s infinite;
   }
 }
-

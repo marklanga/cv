@@ -40,45 +40,71 @@
         <!--Skills-->
         <div class="sticky bottom-0 top-0 p-6 border-2 bg-gray-300 text-black font-black">Skillset</div>
         <div class="container divide-y-2 divide-gray-500 divide-dashed">
-            <section class="container inline-block max-w-5xl mx-auto py-2">
+            <section class="skill-section">
                 <div class="text-teal-200 uppercase mt-2">Web development</div><br/>
-                <div class="grid grid-cols-12 gap-4">
-                    <div class="col-span-12 border-2 bg-blue-100">HTML5</div>
-                    <div class="col-span-11 border-2 bg-blue-100">CSS3</div>
-                    <div class="col-span-7 border-2 bg-blue-100">JS</div>
-                    <div class="col-span-6 border-2 bg-blue-100">pHp</div>
+                
+                <div class="skills-progress">
+                    <p class="">HTML5</p>
                 </div>
+                <div class="skills-progress">
+                    <p class="">CSS3</p>
+                </div>
+                <div class="skills-progress">
+                    JS
+                </div>
+                <div class="skills-progress">
+                    php
+                </div>
+                <br/>
             </section>
-            <section class="container inline-block max-w-5xl mx-auto py-2">
+            <section class="skill-section">
                 <div class="text-teal-200 uppercase mt-2">Software development</div><br/>
-                <div class="grid grid-cols-12 gap-4">
-                    <div class="col-span-12 border-2 bg-blue-100">Microsoft C#</div>
-                    <div class="col-span-11 border-2 bg-blue-100">Java</div>
-                    <div class="col-span-8 border-2 bg-blue-100">C++</div>
-                    <div class="col-span-10 border-2 bg-blue-100">Python</div>
+                
+                <div class="skills-progress">
+                    Microsoft C#
                 </div>
+                <div class="skills-progress">
+                    Java
+                </div>
+                <div class="skills-progress">
+                    C++
+                </div>
+                <div class="skills-progress">
+                    Python
+                </div>
+                <br/>
             </section>
-            <section class="container inline-block max-w-5xl mx-auto py-2">
+            <section class="skill-section">
                 <div class="text-teal-200 uppercase mt-2">Other Skills</div><br/>
-                <div class="grid grid-cols-12 gap-4">
-                    <div class="col-span-12 border-2 bg-blue-100">Adobe Photoshop CS6</div>
-                    <div class="col-span-11 border-2 bg-blue-100">Adobe Illustrator CS6</div>
-                    <div class="col-span-11 border-2 bg-blue-100">Leadership</div>
-                    <div class="col-span-11 border-2 bg-blue-100">Public Speaking</div>
+                <div class="skills-progress">
+                    Adobe After Effects CS6
                 </div>
+                <div class="skills-progress">
+                    Adobe Photoshop CS6
+                </div>
+                <div class="skills-progress">
+                    Adobe Illustrator CS6
+                </div>
+                <div class="skills-progress">
+                    Leadership
+                </div>
+                <div class="skills-progress">
+                    Public Speaking
+                </div>
+                <br/>
             </section>
         </div>
 
-        <!--Projects-->
+        <!--Website Projects-->
         <div class="sticky bottom-0 top-0 p-6 border-2 bg-gray-300 text-black font-black">Website Projects</div>
         <div class="container divide-y-2 divide-gray-500 divide-dashed">
-            <section class="container inline-block max-w-5xl mx-auto py-2">
+            <section class="skill-section">
                 <div class="text-teal-200 uppercase mt-2">Khemistree Website</div><br/>
                 <iframe src="https://khemistree.co.za/" class="w-full h-64">
                     <!--Khemistree Live-->
                 </iframe>
             </section>
-            <section class="container inline-block max-w-5xl mx-auto py-2">
+            <section class="skill-section">
                 <div class="text-teal-200 uppercase mt-2">Mkhonto Visualz Website</div><br/>
                 <iframe src="https://www.mkhontovisualz.co.za" class="w-full h-64">
                     <!--Mkhonto Visualz Live-->
@@ -89,24 +115,43 @@
         <!--Software Projects-->
         <div class="sticky bottom-0 top-0 p-6 border-2 bg-gray-300 text-black font-black">Software Projects</div>
         <div class="container divide-y-2 divide-gray-500 divide-dashed">
-            <section class="container inline-block max-w-5xl mx-auto py-2">
+            <section class="skill-section">
                 <div class="text-teal-200 uppercase mt-2">Axiom Virtual Manager</div><br/>
-                
+                <img src="img/projects/avm.jpg" alt="" class="w-full">
             </section>
-            <section class="container inline-block max-w-5xl mx-auto py-2">
+            <section class="skill-section">
                 
             </section>
         </div>
 
-        <a href="docs/Mark Langa CV.pdf" class="sticky bottom-0 rounded-full float-right flex-shrink-0 border py-2 px-4 m-5">
+        <!--Other Projects-->
+        <div class="sticky bottom-0 top-0 p-6 border-2 bg-gray-300 text-black font-black">Other Projects</div>
+        <div class="container divide-y-2 divide-gray-500 divide-dashed">
+            <section class="skill-section">
+                <div class="text-teal-200 uppercase">Adobe After Effects CS6</div>
+                <video src="img/projects/marklanga.mp4" autoplay muted loop class="w-max-content mt-6"></video>
+            </section>
+            <section class="skill-section">
+                <div class="text-teal-200 uppercase">Adobe Photoshop CS6</div>   
+                <img src="img/projects/bokang.png" alt="" class="w-full">
+            </section>
+        </div>
+
+        <div class="download-cv" onclick="getConfirmation();">
             <div class="">
-                <p class="text-white">Download</p>
+                <img src="img/dl.png" alt="" class="w-20">
             </div>
-        </a>
+        </div>
         
         <!-- Footer Container-->
-        <footer class="w-full bg-gray-300 px-4 py-3 justify-evenly my-5">
-            <span class="block sm:inline">Designed & Built by Mark Langa &copy;</span>
+        <footer class="page-footer">
+            <span class="items-center w-max-content">Designed & Built by Mark Langa &copy;</span>
         </footer>
+
+        <!--JS-->
+        <script type="text/javascript" src="js/main.js"></script>
+        <noscript>
+            Please enable Javascript to continue!
+        </noscript>
     </body>
 </html>
