@@ -106,4 +106,16 @@ const skillSet = [
 skillSet.forEach(function(skill) {
     loadBar(skill.id, skill.percentage, skill.loadTime);
 });
+    
+load = () => {
+    const test = true;
+    const loader = document.getElementById("loader")
+    const cv = document.getElementById("cv")
 
+    if(test){
+        loader.classList.add("hidden");
+        cv.classList.remove("hidden");
+    }
+}
+
+setTimeout(load, 2000);
