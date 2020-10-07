@@ -6,111 +6,117 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/loader.css">
         
         <title>Extra | CV</title>
     </head>
     
     <body class="bg-gray-300">
-        <!-- Header & Nav Container-->
-        <header class="sticky top-0 border-b-2 p-5 bg-gray-900">
-            <div class="flex items-center justify-between max-w-screen-x1">
-                <div class="flex items-center flex-shrink-0 mr-6">
-                    <span class="font-bold text-white text-xl">Mark</span>
+        <div id="loader"></div>
+        
+        <div id="cv" class="hidden">
+                <!-- Header & Nav Container-->
+            <header class="sticky top-0 border-b-2 p-5 bg-gray-900">
+                <div class="flex items-center justify-between max-w-screen-x1">
+                    <div class="flex items-center flex-shrink-0 mr-6">
+                        <span class="font-bold text-white text-xl">Mark</span>
+                    </div>
+                    <div class="w-full items-center justify-end flex-shrink flex-grow sm:flex sm:items-center sm:w-auto border-l-2">
+                        <a href="index.html" class="inline-block text-white mt-4 sm:inline-block sm:mt-0 text-black p-1 ml-2 mr-2 hover:text-blue-500 hover:bg-gray-300">Home</a>
+                        <a href="portfolio.html" class="inline-block text-white mt-4 sm:inline-block sm:mt-0 text-black p-1 ml-2 mr-2 hover:text-blue-500 hover:bg-gray-300">Portfolio</a>
+                        <a href="about.html" class="inline-block text-white mt-4 sm:inline-block sm:mt-0 text-black p-1 ml-2 mr-2 hover:text-blue-500 hover:bg-gray-300">About</a>
+                        <a href="contact.html" class="inline-block text-white mt-4 sm:inline-block sm:mt-0 text-black p-1 ml-2 mr-2 hover:text-blue-500 hover:bg-gray-300">Contact</a>
+                        <a href="extra.html" class="inline-block text-black mt-4 sm:inline-block sm:mt-0 text-black p-1 ml-2 mr-2  border-2 hover:text-gray-900 hover:bg-gray-300 hover:bg-teal-300 hover:border-transparent rounded px-3 bg-gray-300 cursor-not-allowed line-through">Extra</a>
+                    </div>        
                 </div>
-                <div class="w-full items-center justify-end flex-shrink flex-grow sm:flex sm:items-center sm:w-auto border-l-2">
-                    <a href="index.html" class="inline-block text-white mt-4 sm:inline-block sm:mt-0 text-black p-1 ml-2 mr-2 hover:text-blue-500 hover:bg-gray-300">Home</a>
-                    <a href="portfolio.html" class="inline-block text-white mt-4 sm:inline-block sm:mt-0 text-black p-1 ml-2 mr-2 hover:text-blue-500 hover:bg-gray-300">Portfolio</a>
-                    <a href="about.html" class="inline-block text-white mt-4 sm:inline-block sm:mt-0 text-black p-1 ml-2 mr-2 hover:text-blue-500 hover:bg-gray-300">About</a>
-                    <a href="contact.html" class="inline-block text-white mt-4 sm:inline-block sm:mt-0 text-black p-1 ml-2 mr-2 hover:text-blue-500 hover:bg-gray-300">Contact</a>
-                    <a href="extra.html" class="inline-block text-black mt-4 sm:inline-block sm:mt-0 text-black p-1 ml-2 mr-2  border-2 hover:text-gray-900 hover:bg-gray-300 hover:bg-teal-300 hover:border-transparent rounded px-3 bg-gray-300 cursor-not-allowed line-through">Extra</a>
-                </div>        
-            </div>
-        </header><br/>
+            </header><br/>
 
-        <!--Custom Bread Crumb-->
-        <div class="sm:flex-wrap md:flex-wrap p-4">
-            <section class="inline-block max-w-5xl mx-auto border-black border-b-2 p-2 m-2">
-                <h3 class="text-gray-900 font-black m-3">fun stuff<br/>
-                    <span class="text-2xl sm:text-3xl mb-3 text-teal-500 font-black">about </span><br/>
-                    <span class="text-4xl sm:text-5xl mb-3 text-gray-900 font-extrabold font-black">ME</span></h3><br/>
-                </h3>
-            </section>
-        </div>
-
-        <!---Extra-->
-        <div class="grid-cols-1 grid sm:grid-cols-3 md:grid-cols-3 gap-1 p-2">
-            <div class="sm:flex-wrap md:flex-wrap p-1">
-                <section class="inline-block max-w-5xl mx-auto border-2 border-black p-2 m-2">
-                    <h3 class="text-gray-700 font-black m-3">I grew up in<br/>
-                        <span class="text-4xl sm:text-5xl text-teal-500 font-extrabold font-black">Church</span><br/>
+            <!--Custom Bread Crumb-->
+            <div class="sm:flex-wrap md:flex-wrap p-4">
+                <section class="inline-block max-w-5xl mx-auto border-black border-b-2 p-2 m-2">
+                    <h3 class="text-gray-900 font-black m-3">fun stuff<br/>
+                        <span class="text-2xl sm:text-3xl mb-3 text-teal-500 font-black">about </span><br/>
+                        <span class="text-4xl sm:text-5xl mb-3 text-gray-900 font-extrabold font-black">ME</span></h3><br/>
                     </h3>
-                    <img src="img/extra/church.jpg" class="w-full mb-3">
-                    <p class="">I grew up in church and, as a result, I grew to love church with all that I am.<br/><br/>
-                        I not only play the piano/keyboard at church, but I am also the Praise &amp; Worship Leader. Ha! Ha! Yes,
-                        I sing, too! Bet you'd have never guessed.
-                    </p>
                 </section>
             </div>
 
-            <div class="row-span-2 sm:flex-wrap md:flex-wrap p-1">
-                <section class="inline-block max-w-5xl mx-auto border-2 border-black p-2 m-2">
-                    <h3 class="text-gray-700 font-black m-3">I once tried<br/>
-                        <span class="text-4xl sm:text-5xl text-teal-500 font-extrabold font-black">Pageantry</span><br/>
-                    </h3>
-                    <img src="img/extra/pageantry.jpg" class="w-full mb-3">
-                    <p class="">Pageantry is an industry I never thought I would find Myself in... but, here I am. The current 
-                        reigning Mr NWU Vaal (2019 -2020).<br/><br/>
-                        The journey has been an amazing one thus far. I've learned a lot about My own strengths, how to amplify them,
-                        and Myweakness, how to overcome and outgrow them.
-                    
-                    </p>
-                </section>
+            <!---Extra-->
+            <div class="grid-cols-1 grid sm:grid-cols-3 md:grid-cols-3 gap-1 p-2">
+                <div class="sm:flex-wrap md:flex-wrap p-1">
+                    <section class="inline-block max-w-5xl mx-auto border-2 border-black p-2 m-2">
+                        <h3 class="text-gray-700 font-black m-3">I grew up in<br/>
+                            <span class="text-4xl sm:text-5xl text-teal-500 font-extrabold font-black">Church</span><br/>
+                        </h3>
+                        <img src="img/extra/church.jpg" class="w-full mb-3">
+                        <p class="">I grew up in church and, as a result, I grew to love church with all that I am.<br/><br/>
+                            I not only play the piano/keyboard at church, but I am also the Praise &amp; Worship Leader. Ha! Ha! Yes,
+                            I sing, too! Bet you'd have never guessed.
+                        </p>
+                    </section>
+                </div>
+
+                <div class="row-span-2 sm:flex-wrap md:flex-wrap p-1">
+                    <section class="inline-block max-w-5xl mx-auto border-2 border-black p-2 m-2">
+                        <h3 class="text-gray-700 font-black m-3">I once tried<br/>
+                            <span class="text-4xl sm:text-5xl text-teal-500 font-extrabold font-black">Pageantry</span><br/>
+                        </h3>
+                        <img src="img/extra/pageantry.jpg" class="w-full mb-3">
+                        <p class="">Pageantry is an industry I never thought I would find Myself in... but, here I am. The current 
+                            reigning Mr NWU Vaal (2019 -2020).<br/><br/>
+                            The journey has been an amazing one thus far. I've learned a lot about My own strengths, how to amplify them,
+                            and Myweakness, how to overcome and outgrow them.
+                        
+                        </p>
+                    </section>
+                </div>
+
+                <div class="sm:flex-wrap md:flex-wrap p-1 ">
+                    <section class="inline-block max-w-5xl mx-auto border-2 border-black p-2 m-2">
+                        <h3 class="text-gray-700 font-black m-3">My new found love for<br/>
+                            <span class="text-4xl sm:text-5xl text-teal-500 font-extrabold font-black mb-3">Cars</span><br/>
+                            is still growing
+                        </h3>
+                        <img src="img/extra/car.jpg" class="w-full mb-3">
+                        <p class="">Cars are prolly one of the best things that happened to Earth. After lasagne of course. 
+                            Ha! Ha! Ha! The people I spend most of My time with are such petrol heads - even My own siblings!! 
+                            I guess they've rubbed off Me!<br/><br/> 
+                            There's a lot for Me to learn about this industry, though.</p>
+                    </section>
+                </div>
+
+                <div class="sm:flex-wrap md:flex-wrap p-1">
+                    <section class="inline-block max-w-5xl mx-auto border-2 border-black p-2 m-2">
+                        <h3 class="text-gray-700 font-black m-3">I have a passion for<br/>
+                            <span class="text-4xl sm:text-5xl text-teal-500 font-extrabold font-black">Music</span><br/>
+                        </h3>
+                        <img src="img/extra/music.jpg" class=" w-full mb-3">
+                        <p class="">My love for music runs very deep. I first played an instrument when I was only 9-years-old.
+                            The piano was the first instrument I learned how to play... I was taught, by both My parents, enough
+                            to understand the basics.<br/><br/>
+                            I then pursued music at the beginning of high where I had Music as a subject taught by some of Fezile 
+                            Dabe's finest. My brothers followed and we started a jazz band that has performed many gigs. You can 
+                            find out more about us <a href="https://www.facebook.com" class="text-teal-500 underline">here</a>.
+                        </p>
+                    </section>
+                </div>
             </div>
 
-            <div class="sm:flex-wrap md:flex-wrap p-1 ">
-                <section class="inline-block max-w-5xl mx-auto border-2 border-black p-2 m-2">
-                    <h3 class="text-gray-700 font-black m-3">My new found love for<br/>
-                        <span class="text-4xl sm:text-5xl text-teal-500 font-extrabold font-black mb-3">Cars</span><br/>
-                        is still growing
-                    </h3>
-                    <img src="img/extra/car.jpg" class="w-full mb-3">
-                    <p class="">Cars are prolly one of the best things that happened to Earth. After lasagne of course. 
-                        Ha! Ha! Ha! The people I spend most of My time with are such petrol heads - even My own siblings!! 
-                        I guess they've rubbed off Me!<br/><br/> 
-                        There's a lot for Me to learn about this industry, though.</p>
-                </section>
+            <div class="download-cv" onclick="getConfirmation();">
+                <div class="">
+                    <img src="img/dl.png" alt="" class="w-20">
+                </div>
             </div>
 
-            <div class="sm:flex-wrap md:flex-wrap p-1">
-                <section class="inline-block max-w-5xl mx-auto border-2 border-black p-2 m-2">
-                    <h3 class="text-gray-700 font-black m-3">I have a passion for<br/>
-                        <span class="text-4xl sm:text-5xl text-teal-500 font-extrabold font-black">Music</span><br/>
-                    </h3>
-                    <img src="img/extra/music.jpg" class=" w-full mb-3">
-                    <p class="">My love for music runs very deep. I first played an instrument when I was only 9-years-old.
-                        The piano was the first instrument I learned how to play... I was taught, by both My parents, enough
-                        to understand the basics.<br/><br/>
-                        I then pursued music at the beginning of high where I had Music as a subject taught by some of Fezile 
-                        Dabe's finest. My brothers followed and we started a jazz band that has performed many gigs. You can 
-                        find out more about us <a href="https://www.facebook.com" class="text-teal-500 underline">here</a>.
-                    </p>
-                </section>
-            </div>
+           
+            <!-- Footer Container-->
+            <footer class="extra page-footer bg-gray-800">
+                <span class="w-max-content sm:inline text-gray-200">Designed & Built by Mark Langa &copy;</span>
+            </footer>
         </div>
 
-        <div class="download-cv" onclick="getConfirmation();">
-            <div class="">
-                <img src="img/dl.png" alt="" class="w-20">
-            </div>
-        </div>
-
-        </div>
-        <!-- Footer Container-->
-        <footer class="extra page-footer bg-gray-800">
-            <span class="w-max-content sm:inline text-gray-200">Designed & Built by Mark Langa &copy;</span>
-        </footer>
-
-        <!--JS-->
+        <!-- JS -->
+        <script type="text/javascript" src="js/animate.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <noscript>
             Please enable Javascript to continue!

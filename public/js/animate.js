@@ -9,16 +9,13 @@ init = () => {
 }
 
 moveRight = () => {
-    pos == 100 ? clearInterval(setInterval(moveRight, 5)) :
-        imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+    if(pos == 100)
+        clearInterval(setInterval(moveRight, 5))
+    else{
+        imgObj.style.left = parseInt(imgObj.style.left) + 10 + '%';
         animate = setTimeout(moveRight, 5);
-        //pos += 10;
         redirect("./portfolio.html");
-}
-
-stop = () => {
-    clearTimeout(animate);
-    imgObj.style.left = '0px';
+    }
 }
 
 window.onload = init;
@@ -31,9 +28,14 @@ loadBar = (id, skillPercent, speed) => {
     var id = setInterval(fill, speed);
 
     function fill(){
-        width >= skillPercent ? clearInterval(id): width++; elem.style.width = width + "%";
+        if(width >= skillPercent)
+            clearInterval(id)
+        else{
+            width++; 
+            elem.style.width = width + "%";
         }
     }
+}
 
 const skillSet = [
     {
@@ -107,15 +109,14 @@ skillSet.forEach(function(skill) {
     loadBar(skill.id, skill.percentage, skill.loadTime);
 });
     
+// animate loader
 load = () => {
-    const test = true;
     const loader = document.getElementById("loader")
     const cv = document.getElementById("cv")
 
-    if(test){
-        loader.classList.add("hidden");
-        cv.classList.remove("hidden");
-    }
+    loader.classList.add("hidden");
+    cv.classList.remove("hidden");
 }
 
-setTimeout(load, 2000);
+const num = Math.floor(Math.random() * 1000);
+setTimeout(load, num);
