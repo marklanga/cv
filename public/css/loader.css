@@ -3,8 +3,8 @@
     border: 1.6rem solid white;
     border-radius: 50%;
     border-top: 1.6rem solid aquamarine;
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
     animation: spin 2s linear infinite;
 }
 
