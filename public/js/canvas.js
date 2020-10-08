@@ -88,5 +88,3 @@ function update(){
 };
 
 update();
-
-document.addEventListener('click', click);

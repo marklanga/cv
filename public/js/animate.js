@@ -32,7 +32,7 @@ loadBar = (id, skillPercent, speed) => {
             clearInterval(id)
         else{
             width++; 
-            //elem.style.width = width + "%";
+            elem.style.width = width + "%";
         }
     }
 }
@@ -108,6 +108,8 @@ const skillSet = [
 skillSet.forEach(function(skill) {
     loadBar(skill.id, skill.percentage, skill.loadTime);
 });
+
+console.log(JSON.stringify(skillSet));
     
 // animate loader
 load = () => {
