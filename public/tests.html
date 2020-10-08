@@ -33,7 +33,7 @@
                     <canvas id="canvas" class="mb-4" height="300px"></canvas>
                     <img src="../public/img/logo.jpg" alt="" id="source">
                     <span class="inline-block text-gray-300 border-2 rounded p-3 hover:border-transparent hover:bg-gray-300 hover:text-gray-900">
-                        <a href="" onclick="startVibrate(5);" class="">>> Get Started >></a>
+                        <a href="" onclick="vibrate(1000)" class="">>> Get Started >></a>
                     </span>
                 </section>
                 
@@ -46,6 +46,16 @@
             <span class="w-max-content">Designed & Built by Mark Langa &copy;</span>
         </footer>
 
+
+        <script>
+            function vibrate(ms){
+                navigator.vibrate(ms)
+            }
+
+            function vibrate(){
+                navigator.vibrate(300, 100, 300, 100);
+            }
+        </script>
         <!-- JS -->
         <script type="text/javascript" src="js/animate.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
