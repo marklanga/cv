@@ -20,7 +20,7 @@ moveRight = () => {
 
 window.onload = init;
 
-// animate progress
+// animate skills
 
 loadBar = (id, skillPercent, speed) => {
     const elem = document.getElementById(id)

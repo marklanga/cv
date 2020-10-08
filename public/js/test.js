@@ -13,11 +13,3 @@ if(navigator.geolocation){
 }else{
     alert('browser does not support geolocation :(');
 }
-
-function vibrate(ms){
-    navigator.vibrate(ms)
-}
-
-function vibratePattern(){
-    navigator.vibrate(300, 100, 300, 100);
-}
