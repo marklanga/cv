@@ -25,4 +25,4 @@ function stopVibrate(){
     navigator.vibrate(0);
 }
 
-startVibrate();
+startVibrate(5);
