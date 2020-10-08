@@ -1,10 +1,9 @@
 #loader {
     position: absolute;
-    border: 1.6rem solid white;
-    border-radius: 50%;
-    border-top: 1.6rem solid aquamarine;
-    width: 10rem;
-    height: 10rem;
+    top: 40%;
+    left: 41%;
+    width: 20%;
+    height: 20%;
     animation: spin 2s linear infinite;
 }
 

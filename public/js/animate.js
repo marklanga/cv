@@ -32,7 +32,7 @@ loadBar = (id, skillPercent, speed) => {
             clearInterval(id)
         else{
             width++; 
-            elem.style.width = width + "%";
+            //elem.style.width = width + "%";
         }
     }
 }
@@ -116,6 +116,7 @@ load = () => {
 
     loader.classList.add("hidden");
     cv.classList.remove("hidden");
+    
 }
 
 const num = Math.floor(Math.random() * 1000);
