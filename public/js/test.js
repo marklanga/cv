@@ -13,3 +13,16 @@ if(navigator.geolocation){
 }else{
     alert('browser does not support geolocation :(');
 }
+
+var vibrateInterval;
+
+function startVibrate(duration){
+    navigator.vibrate(duration)
+}
+
+function stopVibrate(){
+    if(vibrateInterval) clearInterval(vibrateInterval);
+    navigator.vibrate(0);
+}
+
+startVibrate();
