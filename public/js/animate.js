@@ -4,8 +4,8 @@ let pos = 0;
 
 init = () => {
     imgObj = document.getElementById('animate');
-    imgObj.style.position = 'relative';
-    imgObj.style.left = '0px';
+    //imgObj.style.position = 'relative';
+    //imgObj.style.left = '0px';
 }
 
 moveRight = () => {
@@ -109,7 +109,6 @@ skillSet.forEach(function(skill) {
     loadBar(skill.id, skill.percentage, skill.loadTime);
 });
 
-console.log(JSON.stringify(skillSet));
     
 // animate loader
 load = () => {

@@ -6,52 +6,185 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/skills.css">
         <link rel="stylesheet" href="css/loader.css">
-        <link rel="stylesheet" href="css/canvas.css">
         
-        <title>Home | CV</title>
+        <title>Porfolio | CV</title>
     </head>
     
     <body class="bg-gray-900">
-        <div id="loader"></div>
+        <div id="loader">
+            <img src="img/loader.png" alt="">
+        </div>
         
         <div id="cv" class="hidden">
-           
+            <!-- Header & Nav Container-->
+            <header class="md:sticky lg:sticky xl:sticky top-0 border-b-2 p-5 bg-gray-900">
+                <div class="flex items-center justify-between max-w-screen-x1">
+                    <div class="flex items-center flex-shrink-0 mr-6">
+                        <span class="font-bold text-white text-xl">Mark</span>
+                    </div>
+                    <div class="w-full items-center justify-end flex-shrink flex-grow sm:flex sm:items-center sm:w-auto border-l-2">
+                        <a href="index.html" class="inline-block text-white mt-4 sm:inline-block sm:mt-0 text-black p-1 ml-2 mr-2 hover:text-blue-500 hover:bg-gray-300">Home</a>
+                        <a href="#" class="line-through uppercase cursor-not-allowed inline-block text-white mt-4 sm:inline-block sm:mt-0 text-black p-1 ml-2 mr-2">Portfolio</a>
+                        <a href="about.html" class="inline-block text-white mt-4 sm:inline-block sm:mt-0 text-black p-1 ml-2 mr-2">About</a>
+                        <a href="contact.html" class="inline-block text-white mt-4 sm:inline-block sm:mt-0 text-black p-1 ml-2 mr-2 hover:text-blue-500 hover:bg-gray-300">Contact</a>
+                        <a href="extra.html" class="inline-block text-black mt-4 sm:inline-block sm:mt-0 text-black p-1 ml-2 mr-2  border-2 hover:text-gray-900 hover:bg-gray-300 hover:bg-teal-300 hover:border-transparent rounded px-3 bg-gray-300">Extra</a>
+                    </div>        
+                </div>
+            </header><br/>
+
             <!--Custom Bread Crumb-->
             <div class="sm:flex-wrap md:flex-wrap p-4">
                 <section class="inline-block max-w-5xl mx-auto border-b-2 p-2 m-2">
-                    <h3 class="text-white font-black m-3">explore My<br/>
-                        <span class="text-2xl sm:text-3xl mb-3 text-teal-200 font-black">landing </span><br/>
-                        <span class="text-4xl sm:text-5xl mb-3 text-gray-200 font-extrabold font-black">PAGE<span></h3><br/>
+                    <h3 class="text-white font-black m-3">skills &amp; work<br/>
+                        <span class="text-2xl sm:text-3xl mb-3 text-teal-200 font-black">done by</span><br/>
+                        <span class="text-4xl sm:text-5xl mb-3 text-gray-200 font-extrabold font-black">ME</span></h3><br/>
                     </h3>
                 </section>
             </div>
 
-            <!---Index-->
-            <div class="canvas w-max-content m:flex-wrap md:flex-wrap p-4">
-                <section class="inline-block max-w-5xl p-2">
-                    <canvas id="canvas" class="mb-4" height="300px"></canvas>
-                    <img src="../public/img/logo.jpg" alt="" id="source">
-                    <span class="inline-block text-gray-300 border-2 rounded p-3 hover:border-transparent hover:bg-gray-300 hover:text-gray-900">
-                        <button href="" onclick="vibratePattern()" class="">>> Vibrate >></button>
-                    </span>
+            <!--Skills-->
+            <div class="sticky bottom-0 top-0 p-6 border-2 bg-gray-300 text-black font-black">Skillset</div>
+            <div class="container divide-y-2 divide-gray-500 divide-dashed">
+                <section class="skill-section">
+                    <div class="text-teal-200 uppercase mt-2">Web development</div><br/>
+                    
+                    <div class="skills-progress">
+                        <div id="#html5-progressBar" class="bg-blue-200">
+                            <p>HTML5</p>
+                        </div>
+                    </div>
+                    <div class="skills-progress">
+                        <div id="#css3-progressBar" class="bg-blue-200">
+                            <p>CSS3</p>
+                        </div>
+                    </div>
+                    <div class="skills-progress">
+                        <div id="#js-progressBar" class="bg-blue-200">
+                            <p>JS</p>
+                        </div>
+                    </div>
+                    <div class="skills-progress">
+                        <div id="#php-progressBar" class="bg-blue-200">
+                            <p>php</p>
+                        </div>
+                    </div>
+                    <br/>
                 </section>
-                
+                <section class="skill-section">
+                    <div class="text-teal-200 uppercase mt-2">Software development</div><br/>
+                    
+                    <div class="skills-progress">
+                        <div id="#microsoft-progressBar" class="bg-blue-200">
+                            <p>.NET</p>
+                        </div>
+                    </div>
+                    <div class="skills-progress">
+                        <div id="#java-progressBar" class="bg-blue-200">
+                            <p>Java</p>
+                        </div>
+                    </div>
+                    <div class="skills-progress">
+                        <div id="#cpp-progressBar" class="bg-blue-200">
+                            <p>C++</p>
+                        </div>
+                    </div>
+                    <div class="skills-progress">
+                        <div id="#python-progressBar" class="bg-blue-200">
+                            <p>Python</p>
+                        </div>
+                    </div>
+                    <br/>
+                </section>
+                <section class="skill-section">
+                    <div class="text-teal-200 uppercase mt-2">Other Skills</div><br/>
+                    <div class="skills-progress">
+                        <div id="#ae-progressBar" class="bg-blue-200">
+                            <p>Adobe After Effects CS6</p>
+                        </div>
+                    </div>
+                    <div class="skills-progress">
+                        <div id="#ps-progressBar" class="bg-blue-200">
+                            <p>Adobe Photoshop CS6</p>
+                        </div>
+                    </div>
+                    <div class="skills-progress">
+                        <div id="#ai-progressBar" class="bg-blue-200">
+                            <p>Adobe Illustrator CS6</p>
+                        </div>
+                    </div>
+                    <div class="skills-progress">
+                        <div id="#leadership-progressBar" class="bg-blue-200">
+                            <p>Leadership</p>
+                        </div>
+                    </div>
+                    <div class="skills-progress">
+                        <div id="#speaking-progressBar" class="bg-blue-200">
+                            <p>Public Speaking</p>
+                        </div>
+                    </div>
+                    <br/>
+                </section>
             </div>
 
+            <!--Website Projects-->
+            <div class="sticky bottom-0 top-0 p-6 border-2 bg-gray-300 text-black font-black">Website Projects</div>
+            <div class="container divide-y-2 divide-gray-500 divide-dashed">
+                <section class="skill-section">
+                    <div class="text-teal-200 uppercase mt-2">Khemistree Website</div><br/>
+                    <iframe src="https://khemistree.co.za/" class="w-full" height="500px">
+                        <!--Khemistree Live-->
+                    </iframe>
+                </section>
+                <section class="skill-section">
+                    <div class="text-teal-200 uppercase mt-2">Mkhonto Visualz Website</div><br/>
+                    <iframe src="https://www.mkhontovisualz.co.za" class="w-full" height="500px">
+                        <!--Mkhonto Visualz Live-->
+                    </iframe>
+                </section>
+            </div>
+
+            <!--Software Projects-->
+            <div class="sticky bottom-0 top-0 p-6 border-2 bg-gray-300 text-black font-black">Software Projects</div>
+            <div class="container divide-y-2 divide-gray-500 divide-dashed">
+                <section class="skill-section">
+                    <div class="text-teal-200 uppercase mt-2">Axiom Virtual Manager</div><br/>
+                    <img src="img/projects/avm.jpg" alt="" class="w-full">
+                </section>
+                <section class="skill-section">
+                    
+                </section>
+            </div>
+
+            <!--Other Projects-->
+            <div class="sticky bottom-0 top-0 p-6 border-2 bg-gray-300 text-black font-black">Other Projects</div>
+            <div class="container divide-y-2 divide-gray-500 divide-dashed">
+                <section class="skill-section">
+                    <div class="text-teal-200 uppercase">Adobe After Effects CS6</div>
+                    <video src="img/projects/marklanga.mp4" autoplay muted loop class="w-max-content mt-6"></video>
+                </section>
+                <section class="skill-section">
+                    <div class="text-teal-200 uppercase">Adobe Photoshop CS6</div>   
+                    <img src="img/projects/bokang.png" alt="" class="w-full">
+                </section>
+            </div>
+
+            <div class="download-cv" onclick="getConfirmation();">
+                <div class="">
+                    <img src="img/dl.png" alt="" class="w-20">
+                </div>
+            </div>
+            
+            <!-- Footer Container-->
+            <footer class="page-footer">
+                <span class="items-center w-max-content">Designed & Built by Mark Langa &copy;</span>
+            </footer>
         </div>
-
-        <!-- Footer Container-->
-        <footer class="page-footer">
-            <span class="w-max-content">Designed & Built by Mark Langa &copy;</span>
-        </footer>
-
-
+    
         <!-- JS -->
         <script type="text/javascript" src="js/animate.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
-        <script src="js/canvas.js"></script>
-        <script type="text/javascript" src="js/test.js"></script>
         <noscript>
             Please enable Javascript to continue!
         </noscript>
