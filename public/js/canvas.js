@@ -2,7 +2,7 @@ const canvas = document.getElementById('canvas');
 const image = document.getElementById('source');
 const ctx = canvas.getContext('2d');
 
-const player = {
+const mark = {
     w: 70,
     h: 70,
     x: 20,
@@ -12,8 +12,8 @@ const player = {
     dy: 3
 };
 
-function drawPlayer(){
-    ctx.drawImage(image, player.x, player.y, player.w, player.h);
+function drawmark(){
+    ctx.drawImage(image, mark.x, mark.y, mark.w, mark.h);
 }
 
 function clear(){
@@ -21,26 +21,26 @@ function clear(){
 }
 
 function newPos(){
-    player.x += player.dx;
-    player.y += player.dy;
+    mark.x += mark.dx;
+    mark.y += mark.dy;
 
     detectWalls();
 }
 
 function detectWalls(){
-    if(player.x  + player.w > canvas.width || player.x < 0){
-        player.dx *= -1;
+    if(mark.x  + mark.w > canvas.width || mark.x < 0){
+        mark.dx *= -1;
     }
 
-    if(player.y + player.h > canvas.height || player.y < 0){
-        player.dy *= -1;
+    if(mark.y + mark.h > canvas.height || mark.y < 0){
+        mark.dy *= -1;
     }
 }
 
 function update(){
     clear();
 
-    drawPlayer();
+    drawmark();
 
     newPos();
 

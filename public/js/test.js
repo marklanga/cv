@@ -14,12 +14,18 @@
 //     alert('browser does not support geolocation :(');
 // }
 
+// const successCallback = (position) => {
+//     console.log(position);
+// }
 
-fetch('js/skills.json').then(function(response){
-    return response.json();
-}).then(function (obj){
-    console.log(obj)
-}).catch(function(error){
-    console.log('Something went wrong.');
-    console.log(error);
-});
+// const errorCallback = (error) => {
+//     console.log(error);
+// }
+
+// navigator.geolocation.getCurrentPosition(successCallback, errorCallback, {
+//     enableHighAccuracy: true,
+//     timeout: 5000
+// });
+
+
+

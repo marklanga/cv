@@ -1,4 +1,4 @@
-function vibrate(ms){
+function vibrate(ms = 1000){
     navigator.vibrate(ms)
 }
 

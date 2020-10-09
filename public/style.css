@@ -3535,10 +3535,6 @@ video {
   background-image: linear-gradient(to top left, var(--gradient-color-stops));
 }
 
-.bg-car {
-  background-image: url('car.jpg');
-}
-
 .from-transparent {
   --gradient-from-color: transparent;
   --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -24229,10 +24225,6 @@ video {
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
   }
 
-  .sm\:bg-car {
-    background-image: url('car.jpg');
-  }
-
   .sm\:from-transparent {
     --gradient-from-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -44819,10 +44811,6 @@ video {
 
   .md\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
-  }
-
-  .md\:bg-car {
-    background-image: url('car.jpg');
   }
 
   .md\:from-transparent {
@@ -65413,10 +65401,6 @@ video {
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
   }
 
-  .lg\:bg-car {
-    background-image: url('car.jpg');
-  }
-
   .lg\:from-transparent {
     --gradient-from-color: transparent;
     --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(0, 0, 0, 0));
@@ -86003,10 +85987,6 @@ video {
 
   .xl\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--gradient-color-stops));
-  }
-
-  .xl\:bg-car {
-    background-image: url('car.jpg');
   }
 
   .xl\:from-transparent {

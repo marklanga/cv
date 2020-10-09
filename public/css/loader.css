@@ -4,7 +4,7 @@
     left: 41%;
     width: 20%;
     height: 20%;
-    animation: spin 2s linear infinite;
+    animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
